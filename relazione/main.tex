@@ -564,7 +564,9 @@ Osservando i risultati ottenuti dai test e proposti nella  \hyperref[risultati s
     \item la complessità dei metodi \textbf{select} e di \textbf{rank} non vengono influenzati se siamo nel caso migliore o peggiore di una struttura dati. Infatti, anche se l'\textbf{albero binario di ricerca} risulti sbilanciato esso ci mette sempre $O(n)$. Notiamo che la stessa cosa accade anche per la \textbf{lista ordinata}.
     L'ordine degli input e la loro distribuzione non influenza queste operazioni.
     \item L'\textbf{albero rosso-nero}, grazie al bilanciamento automatico e alla presenza dell'attributo \textbf{size}, risulta sistematicamente più efficiente rispetto alle altre strutture. Tuttavia, la sua elevata efficienza rende più difficile osservare chiaramente l'andamento asintotico, soprattutto in presenza di dataset di dimensioni ridotte.
+    \item Sebbene l’albero rosso-nero comporti un lieve overhead in termini di memoria e complessità implementativa, esso garantisce una scalabilità molto più stabile e prevedibile con la crescita del dataset.
 \end{itemize}
+In definitiva, l’analisi condotta ha confermato le previsioni teoriche, dimostrando come le prestazioni delle statistiche d’ordine dipendano fortemente dalla struttura dati adottata.
 \newpage
 \begin{thebibliography}{9}
 \bibitem{}
