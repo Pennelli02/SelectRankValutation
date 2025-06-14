@@ -35,7 +35,7 @@ def benchmark_rbt_select_rank(trials=1000, output_dir="output/plots/RBTLarge"):
         target_node = tree.search(target_value)
 
         def avg_time(func):
-            return sum(timeit.timeit(func, number=trials) * 1000 for _ in range(trials)) / trials
+            return sum(timeit.timeit(func, number=1) * 1000 for _ in range(trials)) / trials
 
         t_select = avg_time(lambda: tree.Os_Select(tree.root, i_select + 1))
         t_rank = avg_time(lambda: tree.Os_Rank(target_node)) if target_node else float("nan")

@@ -48,7 +48,7 @@ def benchmark_from_saved_structures(folder="input", output_csv="output/benchmark
 
             def avg_measure(func):
                 try:
-                    times = [timeit.timeit(func, number=1000) * 1000 for _ in range(num_trials)]
+                    times = [timeit.timeit(func, number=1) * 1000 for _ in range(num_trials)]
                     return np.mean(times)
                 except Exception as e:
                     print(f" Errore durante il timing: {e}")
